@@ -1,0 +1,24 @@
+# wizard staff
+
+I was a wizard for halloween in 2022, and designed my own staff that I then 3d printed and wrote some python to drive a raspberry pi pico. From the ground up it's designed to be wood -> the battery container -> more wood (hiding some wires) -> dragon claw -> snowglobe. I'm sure you can figure it out, but ask if you can't.
+
+[link to thingiverse to download the 3d models](https://www.thingiverse.com/thing:5622500)
+
+To use the code, save it to the raspberry pi pico as main.py.
+
+Physical parts list is as follows:
+* [1 1/4" dowel](https://www.lowes.com/pd/Madison-Mill-Round-Wood-Poplar-Dowel-Actual-48-in-L-x-1-25-in-dia/3040777?cm_mmc=shp-_-c-_-prd-_-mlw-_-ggl-_-LIA_MLW_122_Mouldings-Specialty-Millwork-_-3040777-_-local-_-0-_-0&ds_rl=1286981&gclid=Cj0KCQiAgribBhDkARIsAASA5btDT4XTrhF2bz_EOAk5OkY148cPApeuoRjAuW_4cbyJ1k3GRovevJEaAhcfEALw_wcB&gclsrc=aw.ds)
+* [a 4 inch (100 mm) snow globe](https://www.amazon.com/dp/B07PYLLLFL)
+* [a usb battery pack, this one fits the enclosure I've designed](https://www.amazon.com/dp/B083VRD7CX?psc=1&ref=ppx_yo2ov_dt_b_product_details)
+* raspberry pi pico
+* WS2182 RGB LEDs
+* a push button switch if you want it
+* a bit of cotton batting to stuff inside the snowglobe around the LEDs
+
+
+##useful information
+Your LEDs should be wired to pin 5.
+on line 19, n signifies the number of LEDs connected -- change it!
+
+If you use a button you should wire it to pin 12.
+[If you get stuck, here's a tutorial](https://randomnerdtutorials.com/micropython-ws2812b-addressable-rgb-leds-neopixel-esp32-esp8266/)
